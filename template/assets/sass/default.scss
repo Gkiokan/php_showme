@@ -1,0 +1,40 @@
+
+
+  body {
+    font-family: Verdana, Arial;
+    font-size:14px;
+
+    background:#222; color:#eee;
+  }
+
+  .element { padding:10px 20px;
+
+    .title { font-size:22px; font-weight:bold; margin-bottom:10px; }
+  }
+
+
+  .server {
+
+    border:1px solid rgb(45, 61, 73);
+
+    color: #fff;
+
+  }
+
+
+  .site, .post, .get {
+
+    border:1px solid rgb(71, 23, 23);
+    background: rgb(71, 23, 23);
+    color: #fff;
+
+  }
+
+  .empty { color: red; background: rgb(238, 252, 164)}
+
+
+  .line {
+      display:block;
+      .key { display:inline-block; width:300px; }
+      .value { display:inline-block; width:auto; }
+  }
