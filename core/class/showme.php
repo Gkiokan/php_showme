@@ -49,8 +49,11 @@
           // Magic Single Examples .
           if(false):
             $this->view($_SERVER, 'server');
-            $this->view($_GET, 'get');
-            $this->view($_POST, 'post');
+            $this->view($_GET, 'get_');
+            $this->view($_POST, 'post_');
+            $this->view($_COOKIE, 'cookie_');
+            $this->view($_FILES, 'files_');
+
           endif;
 
           // Close the Stuff
@@ -67,7 +70,6 @@
           $data["Version"] = $this->version;
           $data["Author"]  = $this->author;
           $data["time"]    = date("d.m.Y H:s:i", time());
-          $data["????"]    = "????";
 
           $this->view($data, "info");
       }
